@@ -36,18 +36,18 @@ export const columns: GridColDef[] = [
     renderCell: (params) => (
       <div>
         <IconButton
-          href={ `edit_ticket.html?ticketId=${ params.row.id }` }
+          href={ `edit/ticket/${ params.row.id }` }
           size="small"
-          sx={ { '&:hover': { color: 'primary.main' } }}
+          sx={ { '&:hover': { color: 'primary.main' } } }
         >
-          <EditIcon />
+          <EditIcon/>
         </IconButton>
         <IconButton
-          href={`delete_ticket.html?ticketId=${params.row.id}`}
+          href={ `delete_ticket.html?ticketId=${ params.row.id }` }
           size="small"
-          sx={{ '&:hover': { color: 'error.main' } }}
+          sx={ { '&:hover': { color: 'error.main' } } }
         >
-          <DeleteIcon />
+          <DeleteIcon/>
         </IconButton>
       </div>
     ),
