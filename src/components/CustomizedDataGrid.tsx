@@ -6,7 +6,6 @@ export default function CustomizedDataGrid() {
   return (
     <DataGrid
       autoHeight
-      checkboxSelection
       rows={rows}
       columns={columns}
       getRowClassName={(params) =>
@@ -17,7 +16,7 @@ export default function CustomizedDataGrid() {
       }}
       pageSizeOptions={[10, 20, 50]}
       disableColumnResize
-      density="compact"
+      density="comfortable"
       slotProps={{
         filterPanel: {
           filterFormProps: {
